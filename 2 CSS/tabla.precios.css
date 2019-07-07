@@ -1,0 +1,70 @@
+body{
+    font-family: 'Lato', sans-serif;  /* aplica la tipografia a todo */
+}
+
+h2{
+    font-weight: 400;              /* ancho de la tipografia */
+}
+
+p{
+    font-weight: 300;              /* ancho de la tipografia */
+}
+
+.container{
+    margin: 0 auto;               /* margen automatico a los lados */
+    width: 90%;                   /* ancho establecido */
+}
+
+.flex{
+    display: flex;
+    flex-wrap: wrap;              /* ocupa el 100% del ancho disponible */
+}
+
+.text-center{
+    text-align: center;
+}
+
+.columna{
+    background: rgb(228, 228, 228);
+    color: #333;
+    border: 1px solid #333;
+    margin: 0 auto;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 10px 10px 5px #888;         /* sombras, eje x eje y, degradado y - para cambiar de lado */
+    width: 23%;
+    box-sizing: border-box;                  /* añade padding y borde al calculo de flex-wrap*/
+}
+
+.precio{
+    font-size: 50px;
+    color: #00dac7;
+}
+
+.btn-precio{
+    background: salmon;
+    color: white;
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    border-radius: 3px;
+    margin-bottom: 10px;
+}
+
+.btn-precio:hover{                            /* pasar el mouse encima del boton y cambia color */
+    background: rgb(255, 35, 35);
+}
+
+@media (max-width: 1070px){
+    .columna{
+        width: 45%;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 600px){
+    .columna{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
